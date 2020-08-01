@@ -1,13 +1,17 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int main() {
-    int map[10][10];
+    //int map[10][10];
+
 
     int size;
     cout << "Input Size: " << '\n';
     cin >> size;
+
+    vector< vector<int> > map(size, vector<int>(size, 0));
 
     cout << "Input Data: " << '\n';
     cout << "Sample:(When Size is 5)\n1 2 3 4 5\n6 7 8 9 10\n11 12 13 14 15\n16 17 18 19 20\n21 22 23 24 25\n";
